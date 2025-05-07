@@ -1,103 +1,175 @@
 /* 
-coral pixels font for links to socials n' github
 body be red hat display
 cal sans br for headings 
+To Do's: Hover animation and effect on links
 */
 
-@import url('https://fonts.googleapis.com/css2?family=Cal+Sans&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Red+Hat+Display:ital,wght@0,300..900;1,300..900&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Cal+Sans&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Red+Hat+Display:ital,wght@0,300..900;1,300..900&display=swap");
 
 :root {
-    --very-dark-grey: #222831;
-    --dark-slate-grey: #393E46;
-    --warm-grey: #948979;
-    --warm-beige: #DFD0B8;
-    --white: #fff;
+  --very-dark-grey: #222831;
+  --dark-slate-grey: #393e46;
+  --warm-grey: #948979;
+  --warm-beige: #dfd0b8;
+  --white: #fff;
 }
 
-*{
-    padding: 0;
-    margin: 0;
-    box-sizing: border-box;
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
 }
 
-main{
-    background-color: var(--very-dark-grey);
-    font-family: 'Red Hat Display', sans-serif;
-    width: 100%;
-    height: 100%;
-    padding: 2rem;
+main {
+  background-color: var(--very-dark-grey);
+  font-family: "Red Hat Display", sans-serif;
+  width: 100%;
+  height: 100%;
+  padding: 2rem;
 }
 
-.hidden{
-    display: none;
+.hidden {
+  display: none;
 }
 
-header{
-    text-align: center;
-    background-color: var(--dark-slate-grey);
-    border: 1px solid var(--warm-grey);
-    border-radius: 5rem;
-    margin: 2rem;
-    padding: 2rem;
+header {
+  text-align: center;
+  background-color: var(--dark-slate-grey);
+  border: 1px solid var(--warm-grey);
+  border-radius: 5rem;
+  margin: 2rem;
+  padding: 2rem;
 }
 
-header h1{
-    font-size: 4rem;
-    color: var(--white);
+header h1 {
+  font-size: 4rem;
+  color: var(--white);
 }
 
-header span{
-    font-size: 1.5rem;
-    font-weight: 600;
-    color: var(--white);
+header span {
+  font-size: 1.5rem;
+  font-weight: 600;
+  color: var(--white);
 }
 
 select {
-    padding: 10px;
-    margin: 20px;
-    border: 1px solid  var(--warm-grey);
-    border-radius: 5px;
+  padding: 10px;
+  margin: 20px;
+  border: 1px solid var(--warm-grey);
+  border-radius: 5px;
 }
 
-article{
-    background-color: var(--dark-slate-grey);
-    border: 1px solid var(--warm-grey);
+.project-container {
+  background-color: var(--dark-slate-grey);
+  /* border: 1px solid var(--warm-grey); */
+  border-radius: 20px;
+  margin: 2rem;
+  padding: 2rem;
+  display: flex;
+  flex-direction: row;
+}
+
+/* .card{
+    background-color: var(--very-dark-grey);
+    font-family: "Red Hat Display", sans-serif;
     border-radius: 5rem;
+    width: 30rem;
+    height: 20rem;
     margin: 2rem;
     padding: 2rem;
-}
-
-footer{
-    color: var(--white);
-    justify-content: center;
-    border-top: 2px solid var(--warm-grey);
-}
-
-.copyright{
-    text-align: center;
-    height: 20px;
-    width: 190px;
-    margin: 2rem;
-}
-
-footer section{
     display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
-footer aside{
-    margin: 1rem 4rem;
-    font-family: 'Cal Sans', sans-serif;
-    font-size: 28px;
-    /* font-weight: 200; */
+.card img{
+    width: 100%;
+    height: 130px;
+    object-fit: cover;
+    margin: 2rem;
+    border-radius: 10px;
+}
+ */
+
+.project-container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 20px;
+  padding: 20px;
+}
+.card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+.card img {
+  width: 100%;
+  height: 150px;
+  object-fit: cover;
+  border-radius: 10px 10px 0 0;
+}
+.card h2 {
+  margin-top: 10px;
+  font-size: 18px;
+  font-weight: bold;
+}
+.card p {
+  margin-bottom: 20px;
+  font-size: 16px;
+  color: #666;
+}
+.btn {
+  padding: 10px 20px;
+  font-size: 16px;
+  font-weight: bold;
+  border: none;
+  border-radius: 5px;
+  background-color: #4caf50;
+  color: #fff;
+  cursor: pointer;
+}
+.btn:hover {
+  background-color: #3e8e41;
 }
 
-footer a{
-    text-decoration: none;
-    color: var(--white);
+footer {
+  color: var(--white);
+  justify-content: center;
+  border-top: 2px solid var(--warm-grey);
 }
 
-footer a:hover{
-    color: var(--warm-beige);
-    /* animation: ease-in; */
+.copyright {
+  text-align: center;
+  height: 20px;
+  width: 190px;
+  margin: 2rem;
+}
+
+footer section {
+  display: flex;
+}
+
+footer aside {
+  margin: 1rem 3rem;
+  font-family: "Cal Sans", sans-serif;
+  font-size: 28px;
+}
+
+footer aside box-icon {
+  margin-right: 0.5rem;
+  font-size: 32px;
+  font-weight: 600;
+  font-style: normal;
+}
+
+footer a {
+  text-decoration: none;
+  color: var(--white);
+  width: 150px;
+  display: flex;
 }
