@@ -3,143 +3,173 @@
 
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Frontend Projects</title>
-
-  <!--Styles-->
-  <link rel="stylesheet" href="style.css" />
-  <link rel="icon" type="image/png" sizes="32x32" href="./images/code_icon_green.svg" />
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet"
-    integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous" />
+  <link rel="icon" type="image/png" sizes="32x32" href="../images/code_icon_green.svg" />
+  <link rel="stylesheet" href="./style.css" />
 </head>
 
 <body>
-  <!--Spinner-->
-  <div class="spinner d-flex justify-content-center align-items-center vh-100">
-    <div class="spinner-grow" style="width: 3rem; height: 3rem; color: #DFD0B8;" role="status">
-      <span class="visually-hidden">Loading...</span>
+  <!--Header-->
+  <header>
+    <h1>FRONTEND PROJECTS</h1>
+    <span>By. Fasugba Mayowa</span>
+    <br />
+    <select name="" id="" style="background-color: #222831; color: #fff">
+      <option value="" selected>Sort by</option>
+      <option value="All">All</option>
+      <option value="html">HTML & CSS</option>
+      <option value="frontend-mentor">Frontend Mentor</option>
+      <option value="bootstrap">Bootstrap</option>
+      <option value="js">JavaScript</option>
+    </select>
+  </header>
+
+  <main id="content">
+    <!-- Cards -->
+    <div class="card">
+      <img class="card-img" src="../images/3-column-card-component.png" />
+      <div class="title">
+        <h2>3 Column Card Component</h2>
+      </div>
+      <div class="view">
+        <button class="modal-open" data-modal="modal1">
+          View
+        </button>
+      </div>
+    </div>
+
+    <div class="card">
+      <img class="card-img" src="../images/fylo-landing-page.png" />
+      <div class="title">
+        <h2>Fylo Landing Page</h2>
+      </div>
+      <div class="view">
+        <button class="modal-open" data-modal="modal2">
+          View
+        </button>
+      </div>
+    </div>
+
+    <div class="card">
+      <img class="card-img" src="../images/tip_calc_app.png" />
+      <div class="title">
+        <h2>Tip Calculator App</h2>
+      </div>
+      <div class="view">
+        <button class="modal-open" data-modal="modal3">
+          View
+        </button>
+      </div>
+    </div>
+  </main>
+
+  <!--Modals-->
+  <div class="modal" id="modal1">
+    <div class="modal-content">
+      <div class="modal-header">
+        3 Column Card Component<button class="modal-close">
+          <ion-icon class="close-icon" name="close-outline"></ion-icon>
+        </button>
+      </div>
+      <div class="modal-body modal-one">
+        <img src="../images/3-column-card-component.png" alt="" />
+        <ul>
+          <li>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat
+            repellendus, delectus vel quis velit, eaque, alias nemo laborum
+            iure veniam beatae. Eum aut voluptatibus dolorum, architecto quae
+            blanditiis quisquam dolore!
+          </li>
+        </ul>
+      </div>
+      <div class="modal-footer">
+        <button class="button">Visit</button>
+      </div>
     </div>
   </div>
 
-  <!--Landing-->
-  <main class="hidden">
-    <!--Header-->
-    <header>
-      <h1>FRONTEND PROJECTS</h1>
-      <span>By. Fasugba Mayowa</span>
-      <br>
-      <select name="" id="" style="background-color: #222831; color: #fff;">
-        <option value="" selected>Sort by</option>
-        <option value="All">All</option>
-        <option value="html">HTML</option>
-        <option value="css">CSS</option>
-        <option value="bootstrap">Bootstrap</option>
-        <option value="js">JavaScript</option>
-      </select>
-    </header>
-
-    <!--Projects section-->
-    <div class="project-container">
-      <div class="cards">
-        <div>
-          <img src="images/tip_calc_app.png" alt="" />
-          <h2>Project 1</h2>
-          <p>HTML is the standard markup language for creating web pages and web applications.</p>
-          <button class="button">Learn More</button>
-        </div>
+  <div class="modal" id="modal2">
+    <div class="modal-content">
+      <div class="modal-header">
+        Fylo Landing Page<button class="modal-close">
+          <ion-icon class="close-icon" name="close-outline"></ion-icon>
+        </button>
       </div>
-
-      <div class="cards">
-        <div>
-          <img src="images/3-column-card-component.png" alt="" />
-          <h2>Project 11</h2>
-          <p>CSS is a style sheet language used for describing the presentation of a document written in a markup
-            language
-            such as HTML.</p>
-          <button class="button">Learn More</button>
-        </div>
+      <div class="modal-body">
+        <img src="../images/fylo-landing-page.png" alt="" />
+        <ul>
+          <li>
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+            Quibusdam nulla accusantium atque dolores alias assumenda, maiores
+            at fugiat ratione, odio suscipit eos in qui praesentium voluptatum
+            expedita nemo cum quo.
+          </li>
+        </ul>
       </div>
-
-      <div class="cards">
-        <div>
-          <img src="images/fylo-landing-page.png" alt="" />
-          <h2>Project 111</h2>
-          <p>Bootstrap is a free and open-source CSS framework directed at responsive, mobile-first front-end web
-            development.</p>
-          <button class="button">Learn More</button>
-        </div>
-      </div>
-
-      <div class="cards">
-        <div>
-          <img src="images/tip_calc_app.png" alt="" />
-          <h2>Project 1</h2>
-          <p>HTML is the standard markup language for creating web pages and web applications.</p>
-          <button class="button">Learn More</button>
-        </div>
-      </div>
-
-      <div class="cards">
-        <div>
-          <img src="images/3-column-card-component.png" alt="" />
-          <h2>Project 11</h2>
-          <p>CSS is a style sheet language used for describing the presentation of a document written in a markup
-            language
-            such as HTML.</p>
-          <button class="button">Learn More</button>
-        </div>
-      </div>
-
-      <div class="cards">
-        <div>
-          <img src="images/fylo-landing-page.png" alt="" />
-          <h2>Project 111</h2>
-          <p>Bootstrap is a free and open-source CSS framework directed at responsive, mobile-first front-end web
-            development.</p>
-          <button class="button">Learn More</button>
-        </div>
+      <div class="modal-footer">
+        <button class="button">Visit</button>
       </div>
     </div>
+  </div>
 
-    <!--Footer-->
-    <footer>
-      <section>
-        <p class="copyright">&copy; Fasugba Mayowa 2025</p>
-        <aside class="gitbub">
-          <a href="">
-            <box-icon name='github' type='logo' color='#dfd0b8'></box-icon>
-            <p>Github</p>
-          </a>
-        </aside>
-        <aside class="twitter">
-          <a href="">
-            <box-icon name='twitter' type='logo' color='#dfd0b8'></box-icon>
-            <p>X</p>
-          </a>
-        </aside>
-        <aside class="linkedin">
-          <a href="">
-            <box-icon type='logo' name='linkedin-square' color="#DFD0B8"></box-icon>
-            <p>LinkedIn</p>
-          </a>
-        </aside>
-        <aside class="email">
-          <a href="">
-            <box-icon name='envelope' color='#dfd0b8'></box-icon>
-            <p>Email</p>
-          </a>
-        </aside>
-      </section>
-    </footer>
-  </main>
+  <div class="modal" id="modal3">
+    <div class="modal-content">
+      <div class="modal-header">
+        Tip Calculator App
+        <button class="modal-close">
+          <ion-icon class="close-icon" name="close-outline"></ion-icon>
+        </button>
+      </div>
+      <div class="modal-body">
+        <img src="../images/tip_calc_app.png" alt="" />
+        <ul>
+          <li>
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+            Exercitationem numquam consequatur, nisi, beatae rem officia
+            quidem modi voluptatem dolore, maxime laboriosam aut obcaecati vel
+            provident delectus soluta reiciendis velit pariatur.
+          </li>
+        </ul>
+      </div>
+      <div class="modal-footer">
+        <button class="button">Visit</button>
+      </div>
+    </div>
+  </div>
 
-
-  <!--JS-->
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
-    integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4"
-    crossorigin="anonymous"></script>
+  <footer>
+    <section>
+      <p class="copyright">&copy; Fasugba Mayowa 2025</p>
+      <aside class="twitter">
+        <a href="">
+          <box-icon name="twitter" type="logo" color="#dfd0b8"></box-icon>
+          <p>X</p>
+        </a>
+      </aside>
+      <aside class="gitbub">
+        <a href="">
+          <box-icon name="github" type="logo" color="#dfd0b8"></box-icon>
+          <p>Github</p>
+        </a>
+      </aside>
+      <aside class="linkedin">
+        <a href="">
+          <box-icon type="logo" name="linkedin-square" color="#dfd0b8"></box-icon>
+          <p>LinkedIn</p>
+        </a>
+      </aside>
+      <aside class="email">
+        <a href="">
+          <box-icon name="envelope" color="#dfd0b8"></box-icon>
+          <p>Email</p>
+        </a>
+      </aside>
+    </section>
+  </footer>
   <script src="https://unpkg.com/boxicons@2.1.4/dist/boxicons.js"></script>
-  <script src="app.js"></script>
+  <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+  <script src="./app.js"></script>
 </body>
 
 </html>
