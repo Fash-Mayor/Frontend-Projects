@@ -322,6 +322,7 @@ body.prevent-background-scroll {
 .modal-footer .button:hover {
   /* color: var(--white); */
   border-radius: 30%;
+  cursor: pointer;
   /* border: none; */
 }
 
@@ -367,8 +368,10 @@ footer a {
   color: var(--white);
   width: 130px;
   display: flex;
+  transition: color .3s ease-in-out, box-shadow .3s ease-in-out;
 }
-footer a:hover{
-  -webkit-transition : all 200ms linear;
-  transition: all 200ms linear;
+
+footer a:hover {
+  color: var(--white);
+  box-shadow: inset 200px 0 0 0 var(--dark-slate-grey);
 }
