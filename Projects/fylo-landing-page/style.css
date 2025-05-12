@@ -1,0 +1,335 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap');
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root{
+    --very-dark-blue: hsl(243, 87%, 12%);
+    --desaturated-blue: hsl(238, 22%, 44%);
+    --bright-blue: hsl(224, 93%, 58%);
+    --moderate-cyan: hsl(170, 45%, 43%);
+    --light-grayish-blue: hsl(240, 75%, 98%);
+    --light-gray: hsl(0, 0%, 75%);
+}
+
+body{
+    font-family: "Open Sans", sans-serif;
+    position: relative;
+    width: 100%;
+}
+
+header{
+    display: flex;
+    justify-content: space-between;
+    margin: 5rem;
+}
+
+header ul{
+    font-family: "Raleway", sans-serif;
+    font-weight: 500;
+    display: flex;
+    gap: 4rem;
+}
+
+header ul li{
+    list-style: none;
+}
+
+header a{
+    text-decoration: none;
+    color: var(--very-dark-blue);
+}
+
+section{
+    display: flex;
+    gap: 4rem;
+    margin: 3rem 5rem 0 5rem;
+}
+
+section .left-section{
+    width: 50%;
+    margin-top: 3rem;
+}
+
+.left-section h1{
+    font-family: "Raleway", sans-serif;
+    font-weight: 800;
+    font-size: 2.3rem;
+    line-height: 3rem;
+    margin-bottom: 1.3rem;
+    width: 100%;
+    color: var(--very-dark-blue);
+}
+
+.left-section p{
+    color: var(--very-dark-blue);
+    font-weight: 500;    
+    font-size: 16px;
+    margin-bottom: 1rem;
+    width: 100%;
+    font-size: 17px;
+}
+
+::placeholder {
+    color: var(--light-gray);
+    font-size: 12px;
+    padding-left: 0.6rem;
+}
+
+.left-section input{
+    padding: 0.6rem;
+    width: 19rem;
+    margin-right: 0.5rem;
+    border: 1px solid var(--desaturated-blue);
+    border-radius: 0.2rem;
+}
+
+.left-section button{
+    padding: 0.7rem 4rem;
+    background-color: var(--bright-blue);
+    color: var(--light-grayish-blue);
+    border: none;
+    border-radius: 0.2rem;
+}
+
+.left-section button:hover{
+    background-color: var(--light-grayish-blue);
+}
+
+section .right-section{
+    width: 50%;
+    margin-top: -1.5rem;
+}
+
+section .right-section img{
+    width: 100%;
+}
+
+.article{
+    background-color: var(--light-grayish-blue);
+    height: 50rem;
+    margin-top: 11rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* gap: 2rem; */
+}
+
+.left-article{
+    margin-left: 5rem;
+    width: 100%;
+}
+
+.left-article h2{
+    font-family: "Raleway", sans-serif;
+    font-weight: 800;
+    font-size: 2.3rem;
+    line-height: 3rem;
+    margin-bottom: 1.3rem;
+    width: 100%;
+    color: var(--very-dark-blue);
+}
+
+.left-article p{
+    font-size: 16px;
+    width: 85%;
+    color: var(--very-dark-blue);
+    font-weight: 500;
+}
+
+.know-how{
+    margin-top: 0.8rem;
+    margin-bottom: 1.8rem;
+}
+
+.know-how a{
+    text-decoration: none;
+    color: var(--moderate-cyan);
+}
+
+.know-how a:hover{
+    color: var(--light-gray);
+}
+
+.testimonial{
+    font-family: "Raleway", sans-serif;
+    font-size: 16px;
+    font-weight: 600; 
+    line-height: 1.6rem;
+    width: 50%;
+    background-color: #fff;
+    padding: 1.6rem;
+    border-radius: 0.2rem;
+    box-shadow: 2px 2px 4px 2px rgba(0, 0, 0, 0.5);
+}
+
+.testimonial .sht-gist{
+    font-size: 14px;
+    width: 100%;
+}
+
+.quotes{
+    display: block;
+    margin: 0 0 0.7rem 0;
+}
+
+.passenger{
+    display: grid;
+    margin-top: 0.9rem;
+}
+
+.passenger img{
+    width: 20%;
+    border-radius: 2rem;
+}
+
+.passenger .CEO{
+    font-weight: 700;
+}
+
+.right-article img{
+    width: 100%;
+    padding-right: 2rem;
+}
+
+.signup{
+    background-color: var(--desaturated-blue);
+    height: 18rem;
+    padding: 0 5rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.signup-left{
+    width: 43%;
+    color: var(--light-grayish-blue);
+}
+
+.signup-left h2{
+    font-family: "Raleway", sans-serif;
+    font-size: xx-large;
+    font-weight: 600;
+    margin-bottom: 1rem;
+}
+
+.signup-left p{
+    margin-bottom: -2rem;
+}
+
+.signup-section{
+    width: 40%;
+}
+
+.signup-section input{
+    padding: 0.6rem;
+    width: 25rem;
+    margin-bottom: 0.5rem;
+    border: 1px solid var(--desaturated-blue);
+    border-radius: 0.3rem;
+}
+
+.signup-section button{
+    width: 11rem;
+    padding: 0.7rem 1.5rem;
+    background-color: var(--bright-blue);
+    color: var(--light-grayish-blue);
+    border: none;
+}
+
+.signup-section button:hover{
+    background-color: var(--moderate-cyan);
+}
+
+menu{
+    background-color: var(--very-dark-blue);
+    color: var(--light-gray);
+    font-weight: 500;
+    height: 22rem;
+    padding: 6rem 5rem 5rem 4rem;
+    display: flex;
+    justify-content: space-between;
+}
+
+menu a{
+    text-decoration: none;
+    color: var(--light-gray);
+}
+
+.left-footer .menu-logo{
+    margin-bottom: 1rem;
+    /* fill: #ff0000; */
+}
+
+.left-footer .connect{
+    margin-bottom: 1rem;
+}
+
+.left-footer .connect .connect-img{
+    margin-right: 0.9rem;
+}
+
+.grid-links{
+    display: grid;
+    gap: 1rem;
+    margin-top: 4rem;
+}
+
+.grid-links a:hover{
+    color: var(--bright-blue);
+}
+
+.socials{
+    margin-top: 4rem;
+    margin-right: 9rem;
+}
+
+.odd{
+    border: 2px solid var(--light-gray);
+    border-radius: 34px;
+}
+
+.attribution{ 
+    font-size: 11px; 
+    text-align: center; 
+}
+
+.attribution a{
+    color: hsl(228, 45%, 44%); 
+}
+
+
+/* Responsiveness */
+/* 
+@media(800 <= width <= 1300px){
+    body{
+        width: 70%;
+        padding: 3rem;
+        position: relative;
+    }
+    header{
+        display: flex;
+        justify-content: space-between;
+        margin: 2rem;
+    }
+    
+    header ul{
+        font-family: "Raleway", sans-serif;
+        font-weight: 500;
+        display: flex;
+        gap: 4rem;
+    }
+    
+    header ul li{
+        list-style: none;
+    }
+    
+    header a{
+        text-decoration: none;
+        color: var(--very-dark-blue);
+    }
+} */
