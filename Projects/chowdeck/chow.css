@@ -1,27 +1,101 @@
 @import url('https://fonts.googleapis.com/css2?family=Lexend:wght@100..900&display=swap');
 
+:root {
+    --red: #fb4a36;
+    --grey: #D0CEC8;
+    --black: #131313;
+    --white: #FFFCF5;
+}
+
 *{
     border: 0;
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     font-family: "Lexend", sans-serif;
+    background-color: var(--white);
 }
 
 body{
     width: 80%;
     margin: auto;
+    font-family: "Lexend", sans-serif;
 }
 
-ul, a{
+/* Header */
+
+ul, a, li{
     text-decoration: none;
+    color: var(--black);
 }
 
-header, ul{
+header, nav{
     display: flex;
     flex-direction: row;
+    gap: 5rem;
+}
+
+header h1{
+    margin-left: -5rem;
+}
+
+nav ul{
+    width: 600px;
+}
+
+.icon-links, .nav-links {
+    display: flex;
+    flex-direction: row;
+    gap: 2rem;
+}
+
+.nav-links{
+    gap: 5rem;
 }
 
 .icon-links{
-    flex-direction:row-reverse;
+    flex-direction:row;
+    margin-left: 14rem;
+}
+
+.nav-links a:hover{
+    color: var(--red);
+}
+
+header{
+    margin: 2rem 0;
+}
+
+nav{
+    margin: 8px 3rem 0 4rem;
+    /* gap: 8rem; */
+}
+
+hr{
+    border: 0.5px solid var(--black);
+    margin-bottom: 2rem;
+}
+
+/* Top of page */
+
+.pizza-slice{
+    width: 40%;
+    height: 35%;
+}
+
+.top-of-page{
+    display: flex;
+    flex-direction: row-reverse;
+}
+
+.intro{
+    width: 30%;
+}
+
+.faded-intro{
+    color: var(--red);
+    border-left: 4px solid var(--red);
+    border-radius: 10%;
+    height: 20px;
+    margin-bottom: 5rem;
 }
