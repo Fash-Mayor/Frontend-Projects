@@ -1,0 +1,232 @@
+@import url('https://fonts.googleapis.com/css2?family=Lexend:wght@100..900&display=swap');
+
+:root {
+    --red: #fb4a36;
+    --grey: #838077;
+    --black: #131313;
+    --white: #FFFCF5;
+}
+
+*{
+    border: 0;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Lexend", sans-serif;
+    background-color: var(--white);
+}
+
+body{
+    width: 80%;
+    margin: auto;
+    font-family: "Lexend", sans-serif;
+}
+
+/* Header */
+
+header{
+    max-width: max-content;
+    width: 80%;
+}
+
+ul, a, li{
+    text-decoration: none;
+    list-style: none;
+    color: var(--black);
+}
+
+header, nav{
+    display: flex;
+    flex-direction: row;
+    /* gap: 5rem; */
+}
+
+header h1{
+    margin-left: -0.2rem;
+}
+
+nav ul{
+    width: 500px;
+}
+
+.icon-links, .nav-links {
+    display: flex;
+    flex-direction: row;
+}
+
+.nav-links{
+    gap: 3rem;
+}
+
+.icon-links{
+    flex-direction:row;
+    margin-left: 15rem;
+    gap: 1.6rem;
+}
+
+.icon-links:hover{
+    /* color: var(--red); */
+    cursor: pointer;
+}
+
+.fa:hover{
+    color: var(--red);
+}
+
+.nav-links a:hover{
+    color: var(--red);
+}
+
+header{
+    margin: 2rem 0;
+}
+
+nav{
+    margin: 8px 3rem 0 4rem;
+    /* gap: 8rem; */
+}
+
+hr{
+    border: 0.5px solid var(--black);
+    margin-bottom: 2rem;
+}
+
+/* Top of page */
+
+.top-of-page{
+    display: flex;
+    flex-direction: row-reverse;
+    /* justify-content: center; */
+    width: 100%;
+    max-width: max-content;
+    margin: auto;
+}
+
+.pizza-slice{
+    max-width: max-content;
+    width: 45%;
+    height: 35%;
+}
+
+.Intro{
+    width: 60%;
+}
+
+.faded-intro{
+    color: var(--red);
+    font-size: 14px;
+}
+
+.Intro h1{
+    width: 70%;
+    font-size: 60px;
+    margin: 1rem 0 1rem 0;
+}
+
+.Intro P{
+    font-size: 15px;
+    margin-bottom: 2rem;
+    width: 70%; 
+    line-height: 18px;
+    color: var(--grey);
+}
+
+.Intro .order-button{
+    display: flex;
+    flex-direction: row;
+}
+
+.Intro .order-button .order-now{
+    padding: 15px 40px;
+    background-color: var(--red);
+    border-radius: 30px;
+    color: var(--white);
+}
+
+.Intro .order-button .order-now:hover, .order-process:hover{
+    cursor: pointer;
+}
+.Intro .order-button .order-process{
+    color: var(--red);
+    font-weight: 700;
+}
+
+.order-process-wrapper{
+    margin: 10px 0 0 30px;
+}
+
+/* Below top of page / Achievements */
+
+.below-top-of-page{
+    width: 100%;
+    display: flex;
+    margin: 2rem auto;
+    color: var(--grey);
+    border-color: var(--grey);
+}
+
+.six{
+    width: 85%;
+    padding: 3px 5px;
+    border: 1px solid var(--black);
+    border-radius: 70px;
+    display: flex;
+    align-items: center;
+}
+
+.six .num{
+    font-size: 30px;
+    border: 2px solid var(--black);
+    border-radius: 50%;
+    padding: 20px;
+}
+
+.six .achieve-gist{
+    width: 60%;
+    font-size: 14px;
+    margin-left: 20px;
+}
+
+.ten{
+    width: 85%;
+    padding: 3px 5px;
+    border: 1px solid var(--black);
+    border-radius: 70px;
+    display: flex;
+    align-items: center;
+}
+
+.ten .num{
+    font-size: 30px;
+    border: 2px solid var(--black);
+    border-radius: 50%;
+    padding: 20px;
+}
+
+.ten .achieve-gist{
+    width: 58%;
+    font-size: 14px;
+    margin-left: 20px;
+}
+
+.twenty{
+    width: 85%;
+    padding: 3px 5px;
+    border: 1px solid var(--black);
+    border-radius: 70px;
+    display: flex;
+    align-items: center;
+}
+
+.twenty .num{
+    font-size: 30px;
+    border: 2px solid var(--black);
+    border-radius: 50%;
+    padding: 20px;
+}
+
+.twenty .achieve-gist{
+    width: 60%;
+    font-size: 14px;
+    margin-left: 15px;
+}
