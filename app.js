@@ -27,11 +27,14 @@ document.addEventListener("click", (e) => {
 
 // redirecting the links to respective project page
 function redir_btn1(){
-  window.location.href= ""
+  window.location.href= "Projects/calculator/calc.html"
 }
 function redir_btn2(){
   window.location.href= "Projects/fylo-landing-page/index.html"
 }
 function redir_btn3(){
   window.location.href= "Projects/tip-calc-app/index.html"
+}
+function redir_btn4(){
+  window.location.href= "Projects/chowshop/chow.html"
 }
