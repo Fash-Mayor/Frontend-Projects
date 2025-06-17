@@ -172,6 +172,10 @@ section .right-section img{
     width: 100%;
 }
 
+.sht-gist, .passenger p{
+    color: hsl(243, 87%, 12%);
+}
+
 .quotes{
     display: block;
     margin: 0 0 0.7rem 0;
