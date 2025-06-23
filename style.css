@@ -50,14 +50,14 @@ header {
 }
 
 header h1 {
-  font-size: 4rem;
-  color: var(--white);
+  font-size: 3rem;
+  color: var(--warm-beige);
 }
 
 header span {
   font-size: 1.5rem;
   font-weight: 600;
-  color: var(--white);
+  color: var(--warm-beige);
 }
 
 select {
@@ -65,7 +65,7 @@ select {
   color: #fff;
   padding: 10px;
   margin: 20px;
-  border: 1px solid var(--warm-grey);
+  border: 1px solid var(--warm-beige);
   border-radius: 5px;
 }
 
@@ -147,6 +147,16 @@ a:active {
   border: none;
   cursor: pointer;
   grid-area: 1 / 2 / span 1 / span 1;
+}
+
+.modal-open:hover{
+  text-shadow: 0 0 5px var(--warm-grey), 
+  0 0 10px var(--warm-grey), 
+  0 0 15px var(--warm-grey), 
+  0 0 20px var(--warm-grey), 
+  0 0 25px var(--warm-grey), 
+  0 0 30px var(--warm-grey), 
+  0 0 35px var(--warm-grey);
 }
 
 .card-img {
@@ -322,58 +332,36 @@ body.prevent-background-scroll {
 }
 
 .modal-footer .button:hover {
-  /* color: var(--white); */
-  border-radius: 30%;
+  background-color: var(--warm-beige);
+  color: var(--dark-slate-grey);
+  border-radius: 25%;
   cursor: pointer;
   /* border: none; */
 }
 
+hr{
+  border: 1px solid var(--warm-grey);
+  margin: 2rem;
+}
+
 /* Footer */
 footer {
-  color: var(--white);
-  /* justify-content: center; */
-  border-top: 2px solid var(--warm-grey);
-}
-
-.copyright {
-  font-size: 18px;
-  text-align: center;
-  height: 20px;
-  width: 230px;
-  margin: 1.5rem;
-}
-
-footer section {
+  color: var(--warm-beige);
   display: flex;
   justify-content: center;
+  margin: 2rem;
+  gap: 3;
 }
 
-footer aside {
-  margin: 1rem 3rem;
+.me .copyright{
+  font-size: 2rem;
   font-family: "Cal Sans", sans-serif;
-  font-size: 26px;
+  text-transform: uppercase;
+  margin-bottom: 20px;
 }
 
-footer .twitter {
-  margin-right: 10px;
-}
-
-footer aside box-icon {
-  margin-right: 0.5rem;
-  font-size: 30px;
-  font-weight: 600;
-  font-style: normal;
-}
-
-footer a {
-  text-decoration: none;
-  color: var(--white);
-  width: 130px;
-  display: flex;
-  transition: color .3s ease-in-out, box-shadow .3s ease-in-out;
-}
-
-footer a:hover {
-  color: var(--white);
-  box-shadow: inset 200px 0 0 0 var(--dark-slate-grey);
+.me span{
+  font-size: 1rem;
+  font-family: "Red Hat Display", sans-serif;
+  font-weight: bold;
 }
