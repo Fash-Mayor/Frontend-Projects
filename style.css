@@ -1,11 +1,3 @@
-/* 
-body be red hat display
-cal sans br for headings 
-
-To Do's: Hover animation and effect on links
-import ion icon
-use sass for the popup type shi
-*/
 
 @import url("https://fonts.googleapis.com/css2?family=Mulish:wght@400;500;600&family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Playwrite+IN:wght@100..400&display=swap");
@@ -364,4 +356,83 @@ footer {
   font-size: 1rem;
   font-family: "Red Hat Display", sans-serif;
   font-weight: bold;
+}
+
+/* Media Queries */
+/* Mobile styles */
+@media (max-width: 600px) {
+  header h1 {
+    font-size: 1.5rem;
+  }
+  header span {
+    font-size: 1rem;
+  }
+  main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .card {
+    width: 90vw;
+    margin-bottom: 1rem;
+  }
+  .modal-content {
+    width: 95vw;
+    padding: 1rem;
+  }
+  footer .me, footer .connect {
+    width: 100%;
+    text-align: center;
+  }
+  .grid {
+    display: block;
+  }
+  .socials {
+    justify-content: center;
+  }
+}
+
+/* Tablet styles */
+@media (min-width: 601px) and (max-width: 900px) {
+  main {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1rem;
+  }
+  .card {
+    width: 45vw;
+  }
+  .modal-content {
+    width: 80vw;
+  }
+  footer {
+    flex-direction: column;
+    align-items: center;
+  }
+  .grid {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+/* Desktop styles */
+@media (min-width: 901px) {
+  main {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2rem;
+  }
+  .card {
+    width: 28vw;
+  }
+  .modal-content {
+    width: 50vw;
+  }
+  footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+  }
+  .grid {
+    grid-template-columns: 1fr 1fr;
+  }
 }
