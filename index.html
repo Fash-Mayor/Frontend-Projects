@@ -11,26 +11,23 @@
 </head>
 
 <body>
-  <!--Header-->
   <header>
     <h1>FRONTEND PROJECTS</h1>
-    <span>By. Fasugba Mayowa</span>
+    <span>By Fasugba Mayowa</span>
     <br />
-    <select title="select">
-      <option value="" selected>Sort by</option>
-      <option value="All">All</option>
+    <select id="sort-select" title="select">
+      <option value="all" selected>All</option>
       <option value="html">HTML & CSS</option>
       <option value="frontend-mentor">Frontend Mentor</option>
       <option value="bootstrap">Bootstrap</option>
       <option value="js">JavaScript</option>
-      <option value="All">SASS</option>
+      <option value="sass">SASS</option>
     </select>
   </header>
 
+  <!-- cards -->
   <main id="content">
-    <!-- Cards -->
-    <!--First card: Calculator-->
-    <div class="card">
+    <div class="card" data-category="js">
       <img class="card-img" src="../images/calc.png" alt="calculator image" />
       <div class="title">
         <h2>Calculator</h2>
@@ -42,8 +39,7 @@
       </div>
     </div>
 
-    <!--Second card: Fylo Landing page-->
-    <div class="card">
+    <div class="card" data-category="html">
       <img class="card-img" src="../images/fylo-landing-page.png" alt="fylo landing page image" />
       <div class="title">
         <h2>Fylo Landing Page</h2>
@@ -55,8 +51,7 @@
       </div>
     </div>
 
-    <!--Third card: Tip calculator app-->
-    <div class="card">
+    <div class="card" data-category="frontend-mentor">
       <img class="card-img" src="../images/tip-calc-app.png" alt="tip calculator app image" />
       <div class="title">
         <h2>Tip Calculator App</h2>
@@ -68,8 +63,7 @@
       </div>
     </div>
 
-    <!--Fourth card: Chow Shop-->
-    <div class="card">
+    <div class="card" data-category="html">
       <img class="card-img" src="../images/chow-shop.png" alt="chowshop image" />
       <div class="title">
         <h2>ChowShop</h2>
@@ -81,36 +75,32 @@
       </div>
     </div>
 
-    <!--Fifth card: -->
-    <div class="card">
-      <img class="card-img" src="../images/" alt="" />
+    <div class="card" data-category="html">
+      <img class="card-img" src="../images/image.png" alt="chowshop image" />
       <div class="title">
-        <h2></h2>
+        <h2>Academy</h2>
       </div>
       <div class="view">
-        <button class="modal-open" data-modal="modal4">
+        <button class="modal-open" data-modal="modal5">
           View
         </button>
       </div>
     </div>
 
-    <!--sixth card: -->
-    <div class="card">
-      <img class="card-img" src="../images/" alt="" />
+    <div class="card" data-category="html">
+      <img class="card-img" src="../images/image2.png" alt="chowshop image" />
       <div class="title">
-        <h2></h2>
+        <h2>Delicioso</h2>
       </div>
       <div class="view">
-        <button class="modal-open" data-modal="modal4">
+        <button class="modal-open" data-modal="modal6">
           View
         </button>
       </div>
     </div>
-
   </main>
 
-  <!--Modals-->
-  <!--First Modal: Calculator-->
+  <!-- Modals -->
   <div class="modal" id="modal1">
     <div class="modal-content">
       <div class="modal-header">
@@ -124,8 +114,7 @@
           <li>
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat
             repellendus, delectus vel quis velit, eaque, alias nemo laborum
-            iure veniam beatae. Eum aut voluptatibus dolorum, architecto quae
-            blanditiis quisquam dolore!
+            iure veniam beatae.
           </li>
         </ul>
       </div>
@@ -135,7 +124,6 @@
     </div>
   </div>
 
-  <!--Second modal: Fylo landing page-->
   <div class="modal" id="modal2">
     <div class="modal-content">
       <div class="modal-header">
@@ -148,9 +136,7 @@
         <ul>
           <li>
             Lorem, ipsum dolor sit amet consectetur adipisicing elit.
-            Quibusdam nulla accusantium atque dolores alias assumenda, maiores
-            at fugiat ratione, odio suscipit eos in qui praesentium voluptatum
-            expedita nemo cum quo.
+            Quibusdam nulla accusantium atque dolores alias assumenda.
           </li>
         </ul>
       </div>
@@ -160,7 +146,6 @@
     </div>
   </div>
 
-  <!--third modal: Tip calculator app-->
   <div class="modal" id="modal3">
     <div class="modal-content">
       <div class="modal-header">
@@ -174,9 +159,7 @@
         <ul>
           <li>
             Lorem, ipsum dolor sit amet consectetur adipisicing elit.
-            Exercitationem numquam consequatur, nisi, beatae rem officia
-            quidem modi voluptatem dolore, maxime laboriosam aut obcaecati vel
-            provident delectus soluta reiciendis velit pariatur.
+            Exercitationem numquam consequatur, nisi, beatae rem officia.
           </li>
         </ul>
       </div>
@@ -186,7 +169,6 @@
     </div>
   </div>
 
-  <!--Fourth modal: Chow shop-->
   <div class="modal" id="modal4">
     <div class="modal-content">
       <div class="modal-header">
@@ -200,9 +182,7 @@
         <ul>
           <li>
             Lorem, ipsum dolor sit amet consectetur adipisicing elit.
-            Exercitationem numquam consequatur, nisi, beatae rem officia
-            quidem modi voluptatem dolore, maxime laboriosam aut obcaecati vel
-            provident delectus soluta reiciendis velit pariatur.
+            Exercitationem numquam consequatur, nisi, beatae rem officia.
           </li>
         </ul>
       </div>
@@ -212,23 +192,20 @@
     </div>
   </div>
 
-  <!--Fifth modal: -->
-  <div class="modal" id="modal4">
+  <div class="modal" id="modal5">
     <div class="modal-content">
       <div class="modal-header">
-        <!-- Chow Shop -->
+        Academy
         <button type="button" title="modal-close" class="modal-close">
           <ion-icon class="close-icon" name="close-outline"></ion-icon>
         </button>
       </div>
       <div class="modal-body">
-        <img src="../images/" alt="chow-shop-image" />
+        <img src="../images/image.png" alt="chow-shop-image" />
         <ul>
           <li>
             Lorem, ipsum dolor sit amet consectetur adipisicing elit.
-            Exercitationem numquam consequatur, nisi, beatae rem officia
-            quidem modi voluptatem dolore, maxime laboriosam aut obcaecati vel
-            provident delectus soluta reiciendis velit pariatur.
+            Exercitationem numquam consequatur, nisi, beatae rem officia.
           </li>
         </ul>
       </div>
@@ -238,23 +215,20 @@
     </div>
   </div>
 
-  <!--sixth modal: -->
-  <div class="modal" id="modal4">
+  <div class="modal" id="modal6">
     <div class="modal-content">
       <div class="modal-header">
-        <!-- Chow Shop -->
+        Delicioso
         <button type="button" title="modal-close" class="modal-close">
           <ion-icon class="close-icon" name="close-outline"></ion-icon>
         </button>
       </div>
       <div class="modal-body">
-        <img src="../images/" alt="chow-shop-image" />
+        <img src="../images/image2.png" alt="chow-shop-image" />
         <ul>
           <li>
             Lorem, ipsum dolor sit amet consectetur adipisicing elit.
-            Exercitationem numquam consequatur, nisi, beatae rem officia
-            quidem modi voluptatem dolore, maxime laboriosam aut obcaecati vel
-            provident delectus soluta reiciendis velit pariatur.
+            Exercitationem numquam consequatur, nisi, beatae rem officia.
           </li>
         </ul>
       </div>
@@ -264,28 +238,24 @@
     </div>
   </div>
 
+
   <hr>
 
   <footer>
     <div class="me">
       <p class="copyright">Frontend Projects <br> by <br> FASUGBA MAYOWA</p>
-      <span>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Veritatis suscipit commodi unde fugit ipsa,
-        cumque,
-        porro impedit, ducimus necessitatibus ad eaque libero quam rerum voluptas officia a officiis sint quo aperiam
-        eos
-        iusto!
-      </span>
-      <br>
-      <button type="button" class="visit-github">Visit My Github</button>
+      <span>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Veritatis suscipit commodi unde fugit ipsa.</span>
+      <br><br>
+      <button type="button" class="button visit-github">Visit My Github</button>
     </div>
 
     <div class="connect">
       <div class="grid">
-        <div class="grid-item">Email</div>
+        <div class="grid-item label">Email</div>
         <div class="grid-item">mayowasamson03@gmail.com</div>
-        <div class="grid-item">Phone Number</div>
+        <div class="grid-item label">Phone Number</div>
         <div class="grid-item">+234 8100 863 195</div>
-        <div class="grid-item">Address</div>
+        <div class="grid-item label">Address</div>
         <div class="grid-item">Alagomeji, Yaba, Lagos, Nigeria</div>
       </div>
 
@@ -296,10 +266,11 @@
         <i class="fa-brands fa-linkedin-in"></i>
       </div>
     </div>
-
   </footer>
 
   <script src="https://unpkg.com/boxicons@2.1.4/dist/boxicons.js"></script>
+  <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
   <script src="./app.js"></script>
 </body>
 

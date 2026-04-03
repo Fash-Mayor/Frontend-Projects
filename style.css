@@ -1,4 +1,3 @@
-
 @import url("https://fonts.googleapis.com/css2?family=Mulish:wght@400;500;600&family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Playwrite+IN:wght@100..400&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Nunito:wght@200;300;400;500;600;700;800;900&family=Young+Serif&display=swap");
@@ -7,10 +6,10 @@
 @import url("https://fonts.googleapis.com/css2?family=Red+Hat+Display:ital,wght@0,300..900;1,300..900&display=swap");
 
 :root {
-  --very-dark-grey: #222831;
-  --dark-slate-grey: #393e46;
-  --warm-grey: #948979;
-  --warm-beige: #dfd0b8;
+  --very-dark-grey: #0f172a;
+  --dark-slate-grey: #1e293b;
+  --warm-grey: #64748b;
+  --warm-beige: #3b82f6;
   --white: #fff;
 }
 
@@ -24,7 +23,11 @@
 
 body {
   min-height: 100vh;
-  background-color: var(--very-dark-grey);
+  background: linear-gradient(
+    135deg,
+    var(--very-dark-grey) 0%,
+    var(--dark-slate-grey) 100%
+  );
   font-family: "Red Hat Display", sans-serif;
   width: 100%;
   height: 100%;
@@ -42,7 +45,7 @@ header {
 }
 
 header h1 {
-  font-size: 3rem;
+  font-size: 4rem;
   color: var(--warm-beige);
 }
 
@@ -63,9 +66,9 @@ select {
 
 #content {
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 10px;
-  padding: 60px 60px 60px 100px;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 20px;
+  padding: 40px;
   min-height: 50dvh /*100dvh*/;
   overflow: hidden;
   font-family: "Nunito", sans-serif;
@@ -81,12 +84,13 @@ select {
   grid-template-columns: 1fr;
   grid-template-rows: 50% 50%;
   margin-bottom: 3rem;
-  width: 300px;
+  width: 100%;
   aspect-ratio: 1/1;
   color: var(--white);
   border-radius: 20px;
-  box-shadow: 0 6.7px 5.3px rgba(0, 0, 0, 0.03),
-    0 22.3px 17.9px rgba(0, 0, 0, 0.05);
+  box-shadow:
+    0 10px 20px rgba(0, 0, 0, 0.2),
+    0 6px 6px rgba(0, 0, 0, 0.1);
 }
 
 a:link,
@@ -141,14 +145,15 @@ a:active {
   grid-area: 1 / 2 / span 1 / span 1;
 }
 
-.modal-open:hover{
-  text-shadow: 0 0 5px var(--warm-grey), 
-  0 0 10px var(--warm-grey), 
-  0 0 15px var(--warm-grey), 
-  0 0 20px var(--warm-grey), 
-  0 0 25px var(--warm-grey), 
-  0 0 30px var(--warm-grey), 
-  0 0 35px var(--warm-grey);
+.modal-open:hover {
+  text-shadow:
+    0 0 5px var(--warm-grey),
+    0 0 10px var(--warm-grey),
+    0 0 15px var(--warm-grey),
+    0 0 20px var(--warm-grey),
+    0 0 25px var(--warm-grey),
+    0 0 30px var(--warm-grey),
+    0 0 35px var(--warm-grey);
 }
 
 .card-img {
@@ -220,7 +225,7 @@ body.prevent-background-scroll {
   background: var(--dark-slate-grey);
   width: 50%;
   border: 4px solid var(--warm-beige);
-  border-radius: 14px;
+  border-radius: 20px;
   z-index: 30;
 }
 
@@ -261,15 +266,15 @@ body.prevent-background-scroll {
   color: var(--white);
 }
 
-.close-icon:hover{
+.close-icon:hover {
   animation: rotate 160ms linear;
 }
 
-@keyframes rotate{
-  0%{
+@keyframes rotate {
+  0% {
     transform: rotate(0deg);
   }
-  100%{
+  100% {
     transform: rotate(90deg);
   }
 }
@@ -300,8 +305,10 @@ body.prevent-background-scroll {
 
 .modal-body li {
   color: var(--white);
-  font-size: 18px;
+  font-size: 20px;
   font-family: "Red Hat Display", sans-serif;
+  line-height: 1.6;
+  margin-bottom: 10px;
 }
 
 .modal-footer {
@@ -314,13 +321,13 @@ body.prevent-background-scroll {
 .modal-footer .button {
   padding: 14px 24px;
   color: var(--white);
-  background-color: var(--very-dark-grey); 
+  background-color: var(--very-dark-grey);
   border: 1px solid var(--warm-beige);
   font-family: "Nunito", sans-serif;
   font-size: 18px;
   font-weight: bold;
   /* transform: translate(-50%, -50%); */
-  transition: all .35s;
+  transition: all 0.35s;
 }
 
 .modal-footer .button:hover {
@@ -331,7 +338,7 @@ body.prevent-background-scroll {
   /* border: none; */
 }
 
-hr{
+hr {
   border: 1px solid var(--warm-grey);
   margin: 2rem;
 }
@@ -345,14 +352,14 @@ footer {
   gap: 3;
 }
 
-.me .copyright{
+.me .copyright {
   font-size: 2rem;
   font-family: "Cal Sans", sans-serif;
   text-transform: uppercase;
   margin-bottom: 20px;
 }
 
-.me span{
+.me span {
   font-size: 1rem;
   font-family: "Red Hat Display", sans-serif;
   font-weight: bold;
@@ -362,25 +369,20 @@ footer {
 /* Mobile styles */
 @media (max-width: 600px) {
   header h1 {
-    font-size: 1.5rem;
+    font-size: 2rem;
   }
   header span {
     font-size: 1rem;
   }
-  main {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-  }
   .card {
-    width: 90vw;
     margin-bottom: 1rem;
   }
   .modal-content {
     width: 95vw;
     padding: 1rem;
   }
-  footer .me, footer .connect {
+  footer .me,
+  footer .connect {
     width: 100%;
     text-align: center;
   }
@@ -394,13 +396,8 @@ footer {
 
 /* Tablet styles */
 @media (min-width: 601px) and (max-width: 900px) {
-  main {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 1rem;
-  }
   .card {
-    width: 45vw;
+    width: 100%;
   }
   .modal-content {
     width: 80vw;
@@ -416,13 +413,8 @@ footer {
 
 /* Desktop styles */
 @media (min-width: 901px) {
-  main {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 2rem;
-  }
   .card {
-    width: 28vw;
+    width: 100%;
   }
   .modal-content {
     width: 50vw;

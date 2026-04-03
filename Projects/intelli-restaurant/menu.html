@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Menu - Delicioso Restaurant</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700;800&family=Lato:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Nav Bar -->
+    <nav class="navbar">
+        <div class="container">
+            <div class="nav-wrapper">
+                <div class="logo">
+                    <span class="logo-icon">🍽️</span>
+                    <h1>Delicioso</h1>
+                </div>
+                <ul class="nav-links">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="menu.html" class="active">Menu</a></li>
+                    <li><a href="cart.html" class="cart-link">🛒 Cart</a></li>
+                </ul>
+                <div class="hamburger">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Page Header -->
+    <section class="page-header">
+        <div class="container">
+            <h1>Our Menu</h1>
+            <p>Discover our delicious selection of dishes</p>
+        </div>
+    </section>
+
+    <!-- Menu Content -->
+    <section class="menu-content">
+        <div class="container">
+            <!-- Appetizers -->
+            <div class="menu-category">
+                <h2>Appetizers</h2>
+                <div class="menu-items-grid">
+                    <div class="menu-item">
+                        <div class="item-image">🥒</div>
+                        <h3>Bruschetta al Pomodoro</h3>
+                        <p class="description">Toasted bread topped with fresh tomatoes, basil, and garlic</p>
+                        <p class="price">$8.99</p>
+                        <button class="btn btn-add-cart" onclick="addToCart('Bruschetta al Pomodoro', 8.99)">Add to Cart</button>
+                    </div>
+                    <div class="menu-item">
+                        <div class="item-image">🦐</div>
+                        <h3>Garlic Shrimp</h3>
+                        <p class="description">Succulent shrimp sautéed with garlic and white wine</p>
+                        <p class="price">$12.99</p>
+                        <button class="btn btn-add-cart" onclick="addToCart('Garlic Shrimp', 12.99)">Add to Cart</button>
+                    </div>
+                    <div class="menu-item">
+                        <div class="item-image">🥕</div>
+                        <h3>Vegetable Platter</h3>
+                        <p class="description">Assorted fresh vegetables with house dip</p>
+                        <p class="price">$7.99</p>
+                        <button class="btn btn-add-cart" onclick="addToCart('Vegetable Platter', 7.99)">Add to Cart</button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Pasta -->
+            <div class="menu-category">
+                <h2>Pasta & Risotto</h2>
+                <div class="menu-items-grid">
+                    <div class="menu-item">
+                        <div class="item-image">🍝</div>
+                        <h3>Fettuccine Alfredo</h3>
+                        <p class="description">Creamy parmesan sauce with fresh fettuccine pasta</p>
+                        <p class="price">$14.99</p>
+                        <button class="btn btn-add-cart" onclick="addToCart('Fettuccine Alfredo', 14.99)">Add to Cart</button>
+                    </div>
+                    <div class="menu-item">
+                        <div class="item-image">🍚</div>
+                        <h3>Truffle Risotto</h3>
+                        <p class="description">Arborio rice with black truffle and parmesan</p>
+                        <p class="price">$16.99</p>
+                        <button class="btn btn-add-cart" onclick="addToCart('Truffle Risotto', 16.99)">Add to Cart</button>
+                    </div>
+                    <div class="menu-item">
+                        <div class="item-image">🍝</div>
+                        <h3>Spaghetti Bolognese</h3>
+                        <p class="description">Traditional meat sauce with fresh spaghetti</p>
+                        <p class="price">$13.99</p>
+                        <button class="btn btn-add-cart" onclick="addToCart('Spaghetti Bolognese', 13.99)">Add to Cart</button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Pizza -->
+            <div class="menu-category">
+                <h2>Wood-Fired Pizza</h2>
+                <div class="menu-items-grid">
+                    <div class="menu-item">
+                        <div class="item-image">🍕</div>
+                        <h3>Margherita Pizza</h3>
+                        <p class="description">Fresh mozzarella, tomato, and basil on thin crust</p>
+                        <p class="price">$12.99</p>
+                        <button class="btn btn-add-cart" onclick="addToCart('Margherita Pizza', 12.99)">Add to Cart</button>
+                    </div>
+                    <div class="menu-item">
+                        <div class="item-image">🍕</div>
+                        <h3>Pepperoni Pizza</h3>
+                        <p class="description">Classic pepperoni with mozzarella on crispy crust</p>
+                        <p class="price">$13.99</p>
+                        <button class="btn btn-add-cart" onclick="addToCart('Pepperoni Pizza', 13.99)">Add to Cart</button>
+                    </div>
+                    <div class="menu-item">
+                        <div class="item-image">🍕</div>
+                        <h3>Four Cheese Pizza</h3>
+                        <p class="description">Blend of mozzarella, parmesan, gorgonzola, and ricotta</p>
+                        <p class="price">$15.99</p>
+                        <button class="btn btn-add-cart" onclick="addToCart('Four Cheese Pizza', 15.99)">Add to Cart</button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Main Courses -->
+            <div class="menu-category">
+                <h2>Main Courses</h2>
+                <div class="menu-items-grid">
+                    <div class="menu-item">
+                        <div class="item-image">🐟</div>
+                        <h3>Grilled Salmon</h3>
+                        <p class="description">Pan-seared salmon with lemon butter and herbs</p>
+                        <p class="price">$18.99</p>
+                        <button class="btn btn-add-cart" onclick="addToCart('Grilled Salmon', 18.99)">Add to Cart</button>
+                    </div>
+                    <div class="menu-item">
+                        <div class="item-image">🥩</div>
+                        <h3>Prime Ribeye Steak</h3>
+                        <p class="description">14oz USDA Prime cut with truffle mashed potatoes</p>
+                        <p class="price">$28.99</p>
+                        <button class="btn btn-add-cart" onclick="addToCart('Prime Ribeye Steak', 28.99)">Add to Cart</button>
+                    </div>
+                    <div class="menu-item">
+                        <div class="item-image">🍗</div>
+                        <h3>Herb Roasted Chicken</h3>
+                        <p class="description">Tender chicken with roasted vegetables and white wine sauce</p>
+                        <p class="price">$16.99</p>
+                        <button class="btn btn-add-cart" onclick="addToCart('Herb Roasted Chicken', 16.99)">Add to Cart</button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Desserts -->
+            <div class="menu-category">
+                <h2>Desserts</h2>
+                <div class="menu-items-grid">
+                    <div class="menu-item">
+                        <div class="item-image">🍰</div>
+                        <h3>Chocolate Lava Cake</h3>
+                        <p class="description">Warm chocolate cake with molten center and vanilla ice cream</p>
+                        <p class="price">$9.99</p>
+                        <button class="btn btn-add-cart" onclick="addToCart('Chocolate Lava Cake', 9.99)">Add to Cart</button>
+                    </div>
+                    <div class="menu-item">
+                        <div class="item-image">🍮</div>
+                        <h3>Tiramisu</h3>
+                        <p class="description">Classic Italian dessert with layers of mascarpone and coffee</p>
+                        <p class="price">$8.99</p>
+                        <button class="btn btn-add-cart" onclick="addToCart('Tiramisu', 8.99)">Add to Cart</button>
+                    </div>
+                    <div class="menu-item">
+                        <div class="item-image">🍓</div>
+                        <h3>Strawberry Cheesecake</h3>
+                        <p class="description">Creamy cheesecake topped with fresh strawberries</p>
+                        <p class="price">$8.99</p>
+                        <button class="btn btn-add-cart" onclick="addToCart('Strawberry Cheesecake', 8.99)">Add to Cart</button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Beverages -->
+            <div class="menu-category">
+                <h2>Beverages</h2>
+                <div class="menu-items-grid">
+                    <div class="menu-item">
+                        <div class="item-image">🍷</div>
+                        <h3>House Red Wine</h3>
+                        <p class="description">Premium Italian red wine selection (Glass)</p>
+                        <p class="price">$8.99</p>
+                        <button class="btn btn-add-cart" onclick="addToCart('House Red Wine', 8.99)">Add to Cart</button>
+                    </div>
+                    <div class="menu-item">
+                        <div class="item-image">🍹</div>
+                        <h3>Freshly Squeezed Lemonade</h3>
+                        <p class="description">Made fresh daily with real lemons</p>
+                        <p class="price">$4.99</p>
+                        <button class="btn btn-add-cart" onclick="addToCart('Freshly Squeezed Lemonade', 4.99)">Add to Cart</button>
+                    </div>
+                    <div class="menu-item">
+                        <div class="item-image">☕</div>
+                        <h3>Espresso</h3>
+                        <p class="description">Strong Italian espresso shot</p>
+                        <p class="price">$3.99</p>
+                        <button class="btn btn-add-cart" onclick="addToCart('Espresso', 3.99)">Add to Cart</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>Delicioso</h3>
+                    <p>Your favorite destination for authentic, fresh cuisine.</p>
+                </div>
+                <div class="footer-section">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="about.html">About</a></li>
+                        <li><a href="menu.html">Menu</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Contact</h4>
+                    <p>📧 orders@delicioso.com</p>
+                    <p>📞 (555) 999-1234</p>
+                    <p>📍 456 Flavors Ave, Foodie City</p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 Delicioso. All rights reserved. Delivering taste and joy!</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
